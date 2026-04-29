@@ -1,6 +1,7 @@
 import {Box} from "@mui/material"
 import ElectionCard from "../Election/electionCard"
 import ParilamentCard from "../pirliament/parliament"
+import RajasthanMap from "../RajasthanMap/rajasthanMap"
 
 export default function HomePage(){
     return(
@@ -9,11 +10,11 @@ export default function HomePage(){
         sx={{
             height:'100vh',
             width:'100vw',
-            backgroundImage:'url(/homEBG.png)',
+            backgroundImage:'url(/homeBGC.png)',
             backgroundSize:'cover',
             backgroundPosition:'center',
             display:'flex',
-            gap:8,
+            gap:16,
             alignItems:'center',
             justifyContent:'center'
         }}
@@ -22,6 +23,7 @@ export default function HomePage(){
             <ElectionCard/>
             <ParilamentCard/>
         </Box>
+        <RajasthanMap/>
         
         </>
     )
